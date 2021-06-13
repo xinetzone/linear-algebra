@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数学符号 &#8212; 品味人生</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/xin-css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/w3css/4/w3.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/w3css/4/w3pro.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/w3css/4/w3mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="shortcut icon" href="../_static/page-logo.jfif"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="微分" href="../linear-algebra/grad.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">品味人生</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   笔记本
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  微分
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../linear-algebra/index.html">
+   线性代数
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../linear-algebra/grad.html">
+     微分
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  符号
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   数学符号
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://github.com/xinetzone/mini-book">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notation/math.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/xinetzone/mini-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/xinetzone/mini-book/issues/new?title=Issue%20on%20page%20%2Fnotation/math.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   数字
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   集合论
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   函数和运算符
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   微积分
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   概率与信息论
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   复杂度
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="id1">
+<h1>数学符号<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>数字<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x\)</span>：标量</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbf{x}\)</span>：向量</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbf{X}\)</span>：矩阵</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathsf{X}\)</span>：张量</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbf{I}\)</span>：单位矩阵</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_i\)</span>, <span class="math notranslate nohighlight">\([\mathbf{x}]_i\)</span>：向量<span class="math notranslate nohighlight">\(\mathbf{x}\)</span>第<span class="math notranslate nohighlight">\(i\)</span>个元素</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_{ij}\)</span>, <span class="math notranslate nohighlight">\([\mathbf{X}]_{ij}\)</span>：矩阵<span class="math notranslate nohighlight">\(\mathbf{X}\)</span>第<span class="math notranslate nohighlight">\(i\)</span>行第<span class="math notranslate nohighlight">\(j\)</span>列的元素</p></li>
+</ul>
+<div class="w3-pale-green">
+向量、矩阵使用 <code>\mathbf</code>，张量使用 <code>\mathsf</code>。
+</div>
+</div>
+<div class="section" id="id3">
+<h2>集合论<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathcal{X}\)</span>: 集合</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{Z}\)</span>: 整数集合</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{R}\)</span> 实数集合</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>: <span class="math notranslate nohighlight">\(n\)</span>维实数向量</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{R}^{a\times b}\)</span>: 包含<span class="math notranslate nohighlight">\(a\)</span>行和<span class="math notranslate nohighlight">\(b\)</span>列的实数矩阵</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{A}\cup\mathcal{B}\)</span>: 集合<span class="math notranslate nohighlight">\(\mathcal{A}\)</span>和<span class="math notranslate nohighlight">\(\mathcal{B}\)</span>的并集（<code class="docutils literal notranslate"><span class="pre">\cup</span></code>）</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{A}\cap\mathcal{B}\)</span>：集合<span class="math notranslate nohighlight">\(\mathcal{A}\)</span>和<span class="math notranslate nohighlight">\(\mathcal{B}\)</span>的交集（<code class="docutils literal notranslate"><span class="pre">\cap</span></code>）</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{A}\setminus\mathcal{B}\)</span>：集合<span class="math notranslate nohighlight">\(\mathcal{B}\)</span>与集合<span class="math notranslate nohighlight">\(\mathcal{A}\)</span>相减（<code class="docutils literal notranslate"><span class="pre">\setminus</span></code>）</p></li>
+</ul>
+<div class="w3-pale-green">
+集合使用 <code>\mathbb</code>，集合族使用 <code>\mathcal</code>。
+</div>
+</div>
+<div class="section" id="id4">
+<h2>函数和运算符<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(\cdot)\)</span>：函数</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log(\cdot)\)</span>：自然对数</p></li>
+<li><p><span class="math notranslate nohighlight">\(\exp(\cdot)\)</span>: 指数函数</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbf{1}_\mathcal{X}\)</span>: 指示函数</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbf{(\cdot)}^\top\)</span>: 向量或矩阵的转置</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbf{X}^{-1}\)</span>: 矩阵的逆</p></li>
+<li><p><span class="math notranslate nohighlight">\(\odot\)</span>: 按元素相乘</p></li>
+<li><p><span class="math notranslate nohighlight">\([\cdot, \cdot]\)</span>：连结</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lvert \mathcal{X} \rvert\)</span>：集合的基数</p></li>
+<li><p><span class="math notranslate nohighlight">\(\|\cdot\|_p\)</span>: ：<span class="math notranslate nohighlight">\(L_p\)</span> 正则</p></li>
+<li><p><span class="math notranslate nohighlight">\(\|\cdot\|\)</span>: <span class="math notranslate nohighlight">\(L_2\)</span> 正则</p></li>
+<li><p><span class="math notranslate nohighlight">\(\langle \mathbf{x}, \mathbf{y} \rangle\)</span>：向量<span class="math notranslate nohighlight">\(\mathbf{x}\)</span>和<span class="math notranslate nohighlight">\(\mathbf{y}\)</span>的点积</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sum\)</span>: 连加</p></li>
+<li><p><span class="math notranslate nohighlight">\(\prod\)</span>: 连乘</p></li>
+<li><p><span class="math notranslate nohighlight">\(\stackrel{\mathrm{def}}{=}\)</span>：定义</p></li>
+<li><p><span class="math notranslate nohighlight">\(\ast\)</span>: 例如，<span class="math notranslate nohighlight">\(a^{\ast}\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>微积分<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\frac{dy}{dx}\)</span>：<span class="math notranslate nohighlight">\(y\)</span>关于<span class="math notranslate nohighlight">\(x\)</span>的导数</p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{\partial y}{\partial x}\)</span>：<span class="math notranslate nohighlight">\(y\)</span>关于<span class="math notranslate nohighlight">\(x\)</span>的偏导数</p></li>
+<li><p><span class="math notranslate nohighlight">\(\nabla_{\mathbf{x}} y\)</span>：<span class="math notranslate nohighlight">\(y\)</span>关于<span class="math notranslate nohighlight">\(\mathbf{x}\)</span>的梯度</p></li>
+<li><p><span class="math notranslate nohighlight">\(\int_a^b f(x) \;dx\)</span>: <span class="math notranslate nohighlight">\(f\)</span>在<span class="math notranslate nohighlight">\(a\)</span>到<span class="math notranslate nohighlight">\(b\)</span>区间上关于<span class="math notranslate nohighlight">\(x\)</span>的定积分</p></li>
+<li><p><span class="math notranslate nohighlight">\(\int f(x) \;dx\)</span>: <span class="math notranslate nohighlight">\(f\)</span>关于<span class="math notranslate nohighlight">\(x\)</span>的不定积分</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>概率与信息论<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(\cdot)\)</span>：概率分布</p></li>
+<li><p><span class="math notranslate nohighlight">\(z \sim P\)</span>: 随机变量<span class="math notranslate nohighlight">\(z\)</span>具有概率分布<span class="math notranslate nohighlight">\(P\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(X \mid Y)\)</span>：<span class="math notranslate nohighlight">\(X\mid Y\)</span>的条件概率</p></li>
+<li><p><span class="math notranslate nohighlight">\(p(x)\)</span>: 概率密度函数</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}_{x} [f(x)]\)</span>: 函数<span class="math notranslate nohighlight">\(f\)</span>对<span class="math notranslate nohighlight">\(x\)</span>的数学期望</p></li>
+<li><p><span class="math notranslate nohighlight">\(X \perp Y\)</span>: 随机变量<span class="math notranslate nohighlight">\(X\)</span>和<span class="math notranslate nohighlight">\(Y\)</span>是独立的</p></li>
+<li><p><span class="math notranslate nohighlight">\(X \perp Y \mid Z\)</span>: 随机变量<span class="math notranslate nohighlight">\(X\)</span>和<span class="math notranslate nohighlight">\(Y\)</span>在给定随机变量<span class="math notranslate nohighlight">\(Z\)</span>的条件下是独立的</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathrm{Var}(X)\)</span>: 随机变量<span class="math notranslate nohighlight">\(X\)</span>的方差</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_X\)</span>: 随机变量<span class="math notranslate nohighlight">\(X\)</span>的标准差</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathrm{Cov}(X, Y)\)</span>: 随机变量<span class="math notranslate nohighlight">\(X\)</span>和<span class="math notranslate nohighlight">\(Y\)</span>的协方差</p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho(X, Y)\)</span>: 随机变量<span class="math notranslate nohighlight">\(X\)</span>和<span class="math notranslate nohighlight">\(Y\)</span>的相关性</p></li>
+<li><p><span class="math notranslate nohighlight">\(H(X)\)</span>: 随机变量<span class="math notranslate nohighlight">\(X\)</span>的熵</p></li>
+<li><p><span class="math notranslate nohighlight">\(D_{\mathrm{KL}}(P\|Q)\)</span>: <span class="math notranslate nohighlight">\(P\)</span>和<span class="math notranslate nohighlight">\(Q\)</span>的KL-散度</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h2>复杂度<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathcal{O}\)</span>：大O标记</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notation"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="../linear-algebra/grad.html" title="previous page">微分</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
