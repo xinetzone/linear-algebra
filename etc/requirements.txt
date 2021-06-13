@@ -13,3 +13,4 @@ sphinx_inline_tabs
 # sympy
 # jupyter-dash
 plotly
+sphinx-comments
