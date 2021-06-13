@@ -4,7 +4,11 @@
 format: jb-book  # Tells Jupyter Book what kind of structure to expect
 root: index # A path to the *root page* (landing page) of your book
 parts:
-- caption: 案例
+- caption: 微分
   chapters:
-  - file: markdown
-  - file: notebooks
+  - file: linear-algebra/index
+    sections:
+      - file: linear-algebra/grad
+- caption: 符号
+  chapters:
+  - file: notation/math
