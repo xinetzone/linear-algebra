@@ -4,11 +4,11 @@
 format: jb-book  # Tells Jupyter Book what kind of structure to expect
 root: index # A path to the *root page* (landing page) of your book
 parts:
-- caption: 微分
+- caption: 微积分
   chapters:
-  - file: linear-algebra/index
+  - file: differential-calculus/index
     sections:
-      - file: linear-algebra/grad
+      - file: differential-calculus/grad
 - caption: 符号
   chapters:
   - file: notation/math

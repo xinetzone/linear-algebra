@@ -10,9 +10,13 @@
 * $x_i$, $[\mathbf{x}]_i$：向量$\mathbf{x}$第$i$个元素
 * $x_{ij}$, $[\mathbf{X}]_{ij}$：矩阵$\mathbf{X}$第$i$行第$j$列的元素
 
-<div class="w3-pale-green">
-向量、矩阵使用 <code>\mathbf</code>，张量使用 <code>\mathsf</code>。
-</div>
+```{div} w3-padding w3-card w3-pale-green
+向量、矩阵使用 `\mathbf`，张量使用 `\mathsf`。
+```
+
+```{important}
+**约定**：向量是列向量。
+```
 
 ## 集合论
 
@@ -25,9 +29,9 @@
 * $\mathcal{A}\cap\mathcal{B}$：集合$\mathcal{A}$和$\mathcal{B}$的交集（`\cap`）
 * $\mathcal{A}\setminus\mathcal{B}$：集合$\mathcal{B}$与集合$\mathcal{A}$相减（`\setminus`）
 
-<div class="w3-pale-green">
-集合使用 <code>\mathbb</code>，集合族使用 <code>\mathcal</code>。
-</div>
+```{div} w3-padding w3-card w3-pale-green
+集合使用 `\mathbb`，集合族使用 `\mathcal`。
+```
 
 ## 函数和运算符
 
