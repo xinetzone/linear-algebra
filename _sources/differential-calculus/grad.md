@@ -13,10 +13,10 @@ $$
 
 ## 向量值函数的导数
 
-令 $\mathbf{f}: \mathbb{R}^n \rightarrow \mathbb{R}^m$，有
+令 $\mathbf{f}: \mathbb{R}^n \rightarrow \mathbb{R}^m$，则梯度记作：
 
 $$
-\nabla_{\mathbf{x}} \mathbf{f(x)} = \bigg[\frac{\partial \mathbf{f(x)}}{\partial x_1}, \frac{\partial \mathbf{f(x)}}{\partial x_2}, \ldots, \frac{\partial \mathbf{f(x)}}{\partial x_n}\bigg]^\top
+\nabla_{\mathbf{x}} \mathbf{f(x)} = \bigg[\frac{\partial \mathbf{f(x)}}{\partial x_1}, \frac{\partial \mathbf{f(x)}}{\partial x_2}, \ldots, \frac{\partial \mathbf{f(x)}}{\partial x_n}\bigg]
 $$
 
 若有 $\mathbf{y} = [y_1, y_2, \ldots, y_m]^\top$，$x \in \mathbb{R}$，则：
@@ -38,29 +38,29 @@ $$
 可以记作：$\mathbf{f^{'}(x)}$ 或者 $\mathbf{D} \mathbf{f(x)}$。容易推出：
 
 $$
-\mathbf{grad \; f(x) = f^{'}(x)}^T\\
+\nabla_\mathbf{x} \mathbf{f(x)} = \mathbf{f^{'}(x)}^{\top}\\
 $$
 
-### 例1 计算：$\frac{\partial \mathbf{||x||^2}}{\partial \mathbf{x}}$
+### 例1 计算：$\nabla_{\mathbf{x}} ||\mathbf{x}||^2$
 
 因为，
 
 $$
 \begin{align}
-\nabla_{\mathbf{x}} ||\mathbf{x}||^2 &= 
-\nabla_{\mathbf{x}} \langle \mathbf{x}, \mathbf{x} \rangle\\
+\mathbf{d} ||\mathbf{x}||^2 &= 
+\mathbf{d} \langle \mathbf{x}, \mathbf{x} \rangle\\
 &=
-\nabla_{\mathbf{x}} \sum_{i=1}^n x_i^2\\
+\mathbf{d} \sum_{i=1}^n x_i^2\\
 &=
-\sum_{i=1}^n \nabla_{\mathbf{x}} x_i^2\\
+\sum_{i=1}^n \mathbf{d} x_i^2\\
 &=
-2 \sum_{i=1}^n \nabla_{\mathbf{x}} x_i\\
+2 \sum_{i=1}^n \mathbf{d} x_i\\
 &=
 2 \mathbf{x}^T \mathbf{d} \mathbf{x}\\
 \end{align}
 $$
 
-所以，$\frac{\partial \mathbf{||x||^2}}{\partial \mathbf{x}} = 2 \mathbf{x}^T$
+所以，$\nabla_{\mathbf{x}} ||\mathbf{x}||^2 = 2 \mathbf{x}$
 
 ### 拓展
 
@@ -68,9 +68,10 @@ $$
 
 $$
 \begin{align}
-\nabla_{\mathbf{x}} ||\mathbf{x}||^2 &=
+\mathbf{d} ||\mathbf{x}||^2 &=
 \langle \mathbf{d} \mathbf{x}, \mathbf{x} \rangle + \langle \mathbf{x}, \mathbf{d} \mathbf{x} \rangle\\
 &= 2 \langle \mathbf{x}, \mathbf{d} \mathbf{x} \rangle\\
-&= 2 \mathbf{x}^T \mathbf{d} \mathbf{x}
+&= 2 \mathbf{x}^T \mathbf{dx}\\
+&= \nabla_{\mathbf{x}} ||\mathbf{x}||^2 \mathbf{dx}
 \end{align}
 $$

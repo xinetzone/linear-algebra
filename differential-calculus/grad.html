@@ -285,10 +285,10 @@ commentsRunWhenDOMLoaded(addUtterances);
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#frac-partial-mathbf-x-2-partial-mathbf-x">
+    <a class="reference internal nav-link" href="#nabla-mathbf-x-mathbf-x-2">
      例1 计算：
      <span class="math notranslate nohighlight">
-      \(\frac{\partial \mathbf{||x||^2}}{\partial \mathbf{x}}\)
+      \(\nabla_{\mathbf{x}} ||\mathbf{x}||^2\)
      </span>
     </a>
    </li>
@@ -324,10 +324,10 @@ commentsRunWhenDOMLoaded(addUtterances);
 \end{split}\]</div>
 <div class="section" id="id2">
 <h2>向量值函数的导数<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p>令 <span class="math notranslate nohighlight">\(\mathbf{f}: \mathbb{R}^n \rightarrow \mathbb{R}^m\)</span>，有</p>
+<p>令 <span class="math notranslate nohighlight">\(\mathbf{f}: \mathbb{R}^n \rightarrow \mathbb{R}^m\)</span>，则梯度记作：</p>
 <div class="math notranslate nohighlight">
 \[
-\nabla_{\mathbf{x}} \mathbf{f(x)} = \bigg[\frac{\partial \mathbf{f(x)}}{\partial x_1}, \frac{\partial \mathbf{f(x)}}{\partial x_2}, \ldots, \frac{\partial \mathbf{f(x)}}{\partial x_n}\bigg]^\top
+\nabla_{\mathbf{x}} \mathbf{f(x)} = \bigg[\frac{\partial \mathbf{f(x)}}{\partial x_1}, \frac{\partial \mathbf{f(x)}}{\partial x_2}, \ldots, \frac{\partial \mathbf{f(x)}}{\partial x_n}\bigg]
 \]</div>
 <p>若有 <span class="math notranslate nohighlight">\(\mathbf{y} = [y_1, y_2, \ldots, y_m]^\top\)</span>，<span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>，则：</p>
 <div class="math notranslate nohighlight">
@@ -346,27 +346,27 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>可以记作：<span class="math notranslate nohighlight">\(\mathbf{f^{'}(x)}\)</span> 或者 <span class="math notranslate nohighlight">\(\mathbf{D} \mathbf{f(x)}\)</span>。容易推出：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\mathbf{grad \; f(x) = f^{'}(x)}^T\\
+\nabla_\mathbf{x} \mathbf{f(x)} = \mathbf{f^{'}(x)}^{\top}\\
 \end{split}\]</div>
-<div class="section" id="frac-partial-mathbf-x-2-partial-mathbf-x">
-<h3>例1 计算：<span class="math notranslate nohighlight">\(\frac{\partial \mathbf{||x||^2}}{\partial \mathbf{x}}\)</span><a class="headerlink" href="#frac-partial-mathbf-x-2-partial-mathbf-x" title="永久链接至标题">¶</a></h3>
+<div class="section" id="nabla-mathbf-x-mathbf-x-2">
+<h3>例1 计算：<span class="math notranslate nohighlight">\(\nabla_{\mathbf{x}} ||\mathbf{x}||^2\)</span><a class="headerlink" href="#nabla-mathbf-x-mathbf-x-2" title="永久链接至标题">¶</a></h3>
 <p>因为，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
-\nabla_{\mathbf{x}} ||\mathbf{x}||^2 &amp;= 
-\nabla_{\mathbf{x}} \langle \mathbf{x}, \mathbf{x} \rangle\\
+\mathbf{d} ||\mathbf{x}||^2 &amp;= 
+\mathbf{d} \langle \mathbf{x}, \mathbf{x} \rangle\\
 &amp;=
-\nabla_{\mathbf{x}} \sum_{i=1}^n x_i^2\\
+\mathbf{d} \sum_{i=1}^n x_i^2\\
 &amp;=
-\sum_{i=1}^n \nabla_{\mathbf{x}} x_i^2\\
+\sum_{i=1}^n \mathbf{d} x_i^2\\
 &amp;=
-2 \sum_{i=1}^n \nabla_{\mathbf{x}} x_i\\
+2 \sum_{i=1}^n \mathbf{d} x_i\\
 &amp;=
 2 \mathbf{x}^T \mathbf{d} \mathbf{x}\\
 \end{align}
 \end{split}\]</div>
-<p>所以，<span class="math notranslate nohighlight">\(\frac{\partial \mathbf{||x||^2}}{\partial \mathbf{x}} = 2 \mathbf{x}^T\)</span></p>
+<p>所以，<span class="math notranslate nohighlight">\(\nabla_{\mathbf{x}} ||\mathbf{x}||^2 = 2 \mathbf{x}\)</span></p>
 </div>
 <div class="section" id="id3">
 <h3>拓展<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
@@ -374,10 +374,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
-\nabla_{\mathbf{x}} ||\mathbf{x}||^2 &amp;=
+\mathbf{d} ||\mathbf{x}||^2 &amp;=
 \langle \mathbf{d} \mathbf{x}, \mathbf{x} \rangle + \langle \mathbf{x}, \mathbf{d} \mathbf{x} \rangle\\
 &amp;= 2 \langle \mathbf{x}, \mathbf{d} \mathbf{x} \rangle\\
-&amp;= 2 \mathbf{x}^T \mathbf{d} \mathbf{x}
+&amp;= 2 \mathbf{x}^T \mathbf{dx}\\
+&amp;= \nabla_{\mathbf{x}} ||\mathbf{x}||^2 \mathbf{dx}
 \end{align}
 \end{split}\]</div>
 </div>
