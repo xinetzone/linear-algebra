@@ -281,7 +281,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   通用微分函数
+   向量值函数的导数
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -323,11 +323,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 \end{bmatrix}
 \end{split}\]</div>
 <div class="section" id="id2">
-<h2>通用微分函数<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p>令 <span class="math notranslate nohighlight">\(f: \mathbb{R}^n \rightarrow \mathbb{R}\)</span>，有</p>
+<h2>向量值函数的导数<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>令 <span class="math notranslate nohighlight">\(\mathbf{f}: \mathbb{R}^n \rightarrow \mathbb{R}^m\)</span>，有</p>
 <div class="math notranslate nohighlight">
 \[
-\nabla_{\mathbf{x}} f(\mathbf{x}) = \bigg[\frac{\partial f(\mathbf{x})}{\partial x_1}, \frac{\partial f(\mathbf{x})}{\partial x_2}, \ldots, \frac{\partial f(\mathbf{x})}{\partial x_n}\bigg]^\top
+\nabla_{\mathbf{x}} \mathbf{f(x)} = \bigg[\frac{\partial \mathbf{f(x)}}{\partial x_1}, \frac{\partial \mathbf{f(x)}}{\partial x_2}, \ldots, \frac{\partial \mathbf{f(x)}}{\partial x_n}\bigg]^\top
 \]</div>
 <p>若有 <span class="math notranslate nohighlight">\(\mathbf{y} = [y_1, y_2, \ldots, y_m]^\top\)</span>，<span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>，则：</p>
 <div class="math notranslate nohighlight">
@@ -342,6 +342,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
 \frac{\partial y_m}{\partial x_1} &amp; \frac{\partial y_m}{\partial x_2} &amp; \cdots &amp; \frac{\partial y_m}{\partial x_n}
 \end{bmatrix}
+\end{split}\]</div>
+<p>可以记作：<span class="math notranslate nohighlight">\(\mathbf{f^{'}(x)}\)</span> 或者 <span class="math notranslate nohighlight">\(\mathbf{D} \mathbf{f(x)}\)</span>。容易推出：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{grad \; f(x) = f^{'}(x)}^T\\
 \end{split}\]</div>
 <div class="section" id="frac-partial-mathbf-x-2-partial-mathbf-x">
 <h3>例1 计算：<span class="math notranslate nohighlight">\(\frac{\partial \mathbf{||x||^2}}{\partial \mathbf{x}}\)</span><a class="headerlink" href="#frac-partial-mathbf-x-2-partial-mathbf-x" title="永久链接至标题">¶</a></h3>
