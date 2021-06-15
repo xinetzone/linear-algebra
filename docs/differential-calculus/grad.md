@@ -11,12 +11,12 @@ $$
 \end{bmatrix}
 $$
 
-## 通用微分函数
+## 向量值函数的导数
 
-令 $f: \mathbb{R}^n \rightarrow \mathbb{R}$，有
+令 $\mathbf{f}: \mathbb{R}^n \rightarrow \mathbb{R}^m$，有
 
 $$
-\nabla_{\mathbf{x}} f(\mathbf{x}) = \bigg[\frac{\partial f(\mathbf{x})}{\partial x_1}, \frac{\partial f(\mathbf{x})}{\partial x_2}, \ldots, \frac{\partial f(\mathbf{x})}{\partial x_n}\bigg]^\top
+\nabla_{\mathbf{x}} \mathbf{f(x)} = \bigg[\frac{\partial \mathbf{f(x)}}{\partial x_1}, \frac{\partial \mathbf{f(x)}}{\partial x_2}, \ldots, \frac{\partial \mathbf{f(x)}}{\partial x_n}\bigg]^\top
 $$
 
 若有 $\mathbf{y} = [y_1, y_2, \ldots, y_m]^\top$，$x \in \mathbb{R}$，则：
@@ -33,6 +33,12 @@ $$
 \vdots & \vdots & \ddots & \vdots \\
 \frac{\partial y_m}{\partial x_1} & \frac{\partial y_m}{\partial x_2} & \cdots & \frac{\partial y_m}{\partial x_n}
 \end{bmatrix}
+$$
+
+可以记作：$\mathbf{f^{'}(x)}$ 或者 $\mathbf{D} \mathbf{f(x)}$。容易推出：
+
+$$
+\mathbf{grad \; f(x) = f^{'}(x)}^T\\
 $$
 
 ### 例1 计算：$\frac{\partial \mathbf{||x||^2}}{\partial \mathbf{x}}$
