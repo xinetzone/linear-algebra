@@ -72,6 +72,6 @@ $$
 \langle \mathbf{d} \mathbf{x}, \mathbf{x} \rangle + \langle \mathbf{x}, \mathbf{d} \mathbf{x} \rangle\\
 &= 2 \langle \mathbf{x}, \mathbf{d} \mathbf{x} \rangle\\
 &= 2 \mathbf{x}^T \mathbf{dx}\\
-&= \nabla_{\mathbf{x}} ||\mathbf{x}||^2 \mathbf{dx}
+&= (\nabla_{\mathbf{x}} ||\mathbf{x}||^2)^{\top} \mathbf{dx}
 \end{align}
 $$
