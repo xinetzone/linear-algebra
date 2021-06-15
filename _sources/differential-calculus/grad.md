@@ -1,13 +1,13 @@
 # 微分
 
-有矩阵 $\mathbf{A} = [\mathbf{a}_1, \mathbf{a}_2, \cdots, \mathbf{a}_m]^T \in \mathbb{R}^{m \times n}$ 和向量 $\mathbf{x} = [x_1, x_2, \cdots, x_n]^T \in \mathbb{R}^{n}$，则有：
+有矩阵 $\mathbf{A} = [\mathbf{a}_1, \mathbf{a}_2, \cdots, \mathbf{a}_m]{\top} \in \mathbb{R}^{m \times n}$ 和向量 $\mathbf{x} = [x_1, x_2, \cdots, x_n]{\top} \in \mathbb{R}^{n}$，则有：
 
 $$
 \mathbf{Ax} = \begin{bmatrix}
-   \mathbf{a}_1^T \mathbf{x} \\
-   \mathbf{a}_2^T \mathbf{x} \\
+   \langle \mathbf{a}_1, \mathbf{x} \rangle\\
+   \langle \mathbf{a}_2, \mathbf{x} \rangle\\
    \vdots \\
-   \mathbf{a}_m^T \mathbf{x}
+   \langle \mathbf{a}_m, \mathbf{x} \rangle
 \end{bmatrix}
 $$
 
@@ -54,9 +54,9 @@ $$
 &=
 \sum_{i=1}^n \mathbf{d} x_i^2\\
 &=
-2 \sum_{i=1}^n \mathbf{d} x_i\\
+2 \sum_{i=1}^n x_i \mathbf{d} x_i\\
 &=
-2 \mathbf{x}^T \mathbf{d} \mathbf{x}\\
+2 \mathbf{x}^{\top} \mathbf{d} \mathbf{x}\\
 \end{align}
 $$
 

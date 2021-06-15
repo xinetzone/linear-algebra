@@ -312,14 +312,14 @@ commentsRunWhenDOMLoaded(addUtterances);
                 
   <div class="section" id="id1">
 <h1>微分<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>有矩阵 <span class="math notranslate nohighlight">\(\mathbf{A} = [\mathbf{a}_1, \mathbf{a}_2, \cdots, \mathbf{a}_m]^T \in \mathbb{R}^{m \times n}\)</span> 和向量 <span class="math notranslate nohighlight">\(\mathbf{x} = [x_1, x_2, \cdots, x_n]^T \in \mathbb{R}^{n}\)</span>，则有：</p>
+<p>有矩阵 <span class="math notranslate nohighlight">\(\mathbf{A} = [\mathbf{a}_1, \mathbf{a}_2, \cdots, \mathbf{a}_m]{\top} \in \mathbb{R}^{m \times n}\)</span> 和向量 <span class="math notranslate nohighlight">\(\mathbf{x} = [x_1, x_2, \cdots, x_n]{\top} \in \mathbb{R}^{n}\)</span>，则有：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \mathbf{Ax} = \begin{bmatrix}
-   \mathbf{a}_1^T \mathbf{x} \\
-   \mathbf{a}_2^T \mathbf{x} \\
+   \langle \mathbf{a}_1, \mathbf{x} \rangle\\
+   \langle \mathbf{a}_2, \mathbf{x} \rangle\\
    \vdots \\
-   \mathbf{a}_m^T \mathbf{x}
+   \langle \mathbf{a}_m, \mathbf{x} \rangle
 \end{bmatrix}
 \end{split}\]</div>
 <div class="section" id="id2">
@@ -361,9 +361,9 @@ commentsRunWhenDOMLoaded(addUtterances);
 &amp;=
 \sum_{i=1}^n \mathbf{d} x_i^2\\
 &amp;=
-2 \sum_{i=1}^n \mathbf{d} x_i\\
+2 \sum_{i=1}^n x_i \mathbf{d} x_i\\
 &amp;=
-2 \mathbf{x}^T \mathbf{d} \mathbf{x}\\
+2 \mathbf{x}^{\top} \mathbf{d} \mathbf{x}\\
 \end{align}
 \end{split}\]</div>
 <p>所以，<span class="math notranslate nohighlight">\(\nabla_{\mathbf{x}} ||\mathbf{x}||^2 = 2 \mathbf{x}\)</span></p>
