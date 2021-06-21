@@ -1,3 +1,4 @@
+(linear-algebra)=
 # 线性代数
 
 ```{div} w3-pale-green w3-card w3-padding w3-round-xlarge w3-margin-top
