@@ -6,11 +6,9 @@ ipywidgets
 jupyter-book
 ghp-import
 sphinx_inline_tabs
-# sphinx
-# sphinx-click
-# sphinx_inline_tabs
+sphinx-click
 # sphinxext-rediraffe
-# sympy
+sympy
 # jupyter-dash
 plotly
 sphinx-comments
