@@ -9,6 +9,3 @@ parts:
   - file: differential-calculus/index
     sections:
       - file: differential-calculus/grad
-- caption: 符号
-  chapters:
-  - file: notation/math
